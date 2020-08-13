@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mpack.DemoTestNG2">
+      <class name="listnwers.Demo">
         <methods>
-          <include name="SampleTest2"/>
+          <include name="listeners1"/>
+          <include name="listeners2"/>
+          <include name="listeners"/>
         </methods>
-      </class> <!-- mpack.DemoTestNG2 -->
+      </class> <!-- listnwers.Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

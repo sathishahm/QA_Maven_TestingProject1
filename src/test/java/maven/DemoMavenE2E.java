@@ -1,4 +1,4 @@
-package mpack;
+package maven;
 
 import java.util.concurrent.TimeUnit;
 
@@ -29,10 +29,10 @@ public class DemoMavenE2E {
 		driver.findElement(By.linkText("Login")).click();
 
 		// Log-in to the application with valid credentials
-
 		driver.findElement(By.id("input-email")).sendKeys("arun.selenium5@gmail.com");
 		driver.findElement(By.id("input-password")).sendKeys("Second@123");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		
 
 		System.out.println(
 				driver.findElement(By.xpath("//ul[@class='breadcrumb']//a[contains(text(),'Account')]")).isEnabled()); // true
@@ -49,9 +49,7 @@ public class DemoMavenE2E {
 		// Adding the items from Product display page to card
 
 		driver.findElement(By.xpath("//div[@class='caption']//a[contains(text(),'iPhone')]")).click();
-
 		System.out.println(driver.findElement(By.xpath("//a[contains(text(),'iPhone')]")).isDisplayed()); // true
-
 		WebElement quantity = driver.findElement(By.id("input-quantity"));
 		quantity.clear();
 		quantity.sendKeys("2");
@@ -82,7 +80,7 @@ public class DemoMavenE2E {
 		select1.selectByVisibleText("United Kingdom");
 
 		WebElement region = driver.findElement(By.id("input-payment-zone"));
-		Select select2 = new Select(region);
+		Select select2 = new Select(region); // dropdown
 		select2.selectByVisibleText("Angus");
 
 		driver.findElement(By.id("button-payment-address")).click();
@@ -100,7 +98,7 @@ public class DemoMavenE2E {
 		System.out.println(
 				driver.findElement(By.xpath("//*[@id=\"common-success\"]/ul/li[4]/a")).getText().contains("Success"));
 
-		// driver.quit();
+		driver.quit();
 
 		// *[@id="collapse-payment-address"]/div/form/div[3]/label
 

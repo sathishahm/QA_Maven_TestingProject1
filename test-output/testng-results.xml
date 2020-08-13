@@ -1,21 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-06T16:47:03 IST" name="Default suite" finished-at="2020-08-06T16:47:03 IST" duration-ms="239">
+  <suite started-at="2020-08-07T18:00:55 IST" name="Suite" finished-at="2020-08-07T18:01:21 IST" duration-ms="26476">
     <groups>
     </groups>
-    <test started-at="2020-08-06T16:47:03 IST" name="Default test" finished-at="2020-08-06T16:47:03 IST" duration-ms="239">
-      <class name="mpack.DemoTestNG2">
-        <test-method signature="Registration()[pri:1, instance:mpack.DemoTestNG2@50caa560]" started-at="2020-08-06T16:47:03 IST" name="Registration" finished-at="2020-08-06T16:47:03 IST" duration-ms="36" status="PASS">
+    <test started-at="2020-08-07T18:00:55 IST" name="Test" finished-at="2020-08-07T18:01:21 IST" duration-ms="26476">
+      <class name="listnwers.Demo">
+        <test-method signature="listeners1()[pri:0, instance:listnwers.Demo@ba54932]" started-at="2020-08-07T18:00:55 IST" name="listeners1" finished-at="2020-08-07T18:01:21 IST" duration-ms="26205" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Registration -->
-        <test-method signature="Login()[pri:2, instance:mpack.DemoTestNG2@50caa560]" started-at="2020-08-06T16:47:03 IST" name="Login" finished-at="2020-08-06T16:47:03 IST" duration-ms="10" status="PASS">
+        </test-method> <!-- listeners1 -->
+        <test-method signature="listeners3()[pri:0, instance:listnwers.Demo@ba54932]" started-at="2020-08-07T18:00:55 IST" name="listeners3" finished-at="2020-08-07T18:01:20 IST" duration-ms="24819" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test Skipped]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test Skipped
+at listnwers.Demo.listeners3(Demo.java:99)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- mpack.DemoTestNG2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- listeners3 -->
+        <test-method signature="listeners2()[pri:0, instance:listnwers.Demo@ba54932]" started-at="2020-08-07T18:00:55 IST" name="listeners2" finished-at="2020-08-07T18:01:19 IST" duration-ms="24698" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at listnwers.Demo.listeners2(Demo.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listeners2 -->
+      </class> <!-- listnwers.Demo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

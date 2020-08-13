@@ -13,9 +13,9 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DemoTestNGe2e {
-	@Test
 	
-	public void SampleTestNG() throws InterruptedException {
+	@Test
+		public void SampleTestNG() throws InterruptedException {
 
 		WebDriverManager.chromedriver().setup(); // to setup exe file without select exe and pom add
 
